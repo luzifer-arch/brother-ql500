@@ -14,12 +14,12 @@ if [ "$CARCH" = 'x86_64' ]; then
 fi
 conflicts=('brother-ql500-cupswrapper' 'brother-ql500-cupswrapperinch' 'brother-ql500-lpr')
 provides=('brother-ql500-cupswrapper' 'brother-ql500-cupswrapperinch' 'brother-ql500-lpr')
-install="$pkgname.install"
-source=("http://download.brother.com/welcome/dlfp002167/ql550lpr-${pkgver/r/-}.i386.rpm"
-        "http://download.brother.com/welcome/dlfp002169/ql550cupswrapper-${pkgver/r/-}.i386.rpm"
-        'LICENSE')
-sha256sums=('83f622668f70785887f2645352a4634e649761fbf8f83dad9bb991ed6e2534e5'
-            'a1ee42684b3d882fb786bfc5bcaec450a8c5e29f0750999b5b7d7e594be5986f'
+source=(
+	"https://download.brother.com/welcome/dlfp002161/ql500lpr-${pkgver/r/-}.i386.rpm"
+	"https://download.brother.com/welcome/dlfp002163/ql500cupswrapper-${pkgver/r/-}.i386.rpm"
+	'LICENSE')
+sha256sums=('446604f41024395c6f2104e1b5ed3a175f498aa5aa0db9af2341bbb56988b991'
+            '8993b585d69c5173b0c9e8db774b07e82dd4f38b4a6be98795119b6655433d89'
             'cdd1955a9996bc246ba54e84f0a5ccbfdf6623962b668188762389aa79ef9811')
 
 prepare()
